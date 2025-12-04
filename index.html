@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciador de Portfólio</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Adicionar / Editar Projeto</h2>
+            <form id="projectForm">
+                <input type="hidden" id="projectIndex"> <input type="text" id="title" placeholder="Título do Projeto" required>
+                <input type="text" id="image" placeholder="URL da Imagem (ex: https://site.com/foto.jpg)" required>
+                <textarea id="description" placeholder="Descrição do projeto" required></textarea>
+                
+                <button type="submit" id="saveBtn">Salvar Projeto</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Meus Projetos</h2>
+            <div id="projectList" class="grid-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
